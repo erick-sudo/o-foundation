@@ -1,10 +1,16 @@
 import {} from "react";
 import "./App.css";
+import { Home } from "./components/Home";
+import { NavBar } from "./components/NavBar";
+import { Footer } from "./components/Footer";
 
 function App() {
-  return <div>
-    <h2 className="text-4xl font-extrabold text-center p-4">O-Foundation</h2>
-  </div>;
+  return (
+    <div>
+      <Home />
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
