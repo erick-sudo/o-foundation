@@ -70,8 +70,8 @@ export const Home = () => {
         <div className="container mx-auto px-4">
           <NavBar />
           <Glass className="m-2" glassClassName="blur rounded-md">
-            <div className="text-white py-[1em] px-[1em] mt-[20vh] text-6xl lg:text-6xl max-w-2xl">
-              Empowering young minds for a brighter future
+            <div className="text-white py-[1em] mt-[20vh] text-6xl lg:text-6xl max-w-3xl">
+            Welcome to OA-Foundation, a beacon of empowerment and opportunity for young minds.
             </div>
             <p className="max-w-md m-4 text-white border font-bold p-4">
               We are dedicated to empowering young individuals through sports,

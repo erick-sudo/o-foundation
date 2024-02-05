@@ -10,7 +10,7 @@ import { About } from "./components/About";
 
 function App() {
   return (
-    <div>
+    <div className="font-serif">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

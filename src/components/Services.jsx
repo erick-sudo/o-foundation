@@ -132,7 +132,7 @@ export function Services() {
                     <h2 className={`text-xl min-h-12 font-bold ${idx % 2 === 0 ? "text-green-950" : "text-green-400"}`}>{service}</h2>
                     <div className="p-4 text-4xl">
                       <ContentOnImage className="h-[40vh]" imageContainerClassName="z-10" image={serviceImages[service]}>
-                        <div className="absolute inset-0 bg-gradient-to-tr from-green-950/50 via-green-900/50 to-green-950 z-20"></div>
+                        <div className="absolute inset-0 bg-green-950/50 z-20"></div>
                       </ContentOnImage>
                     </div>
                     <div className={``}>
