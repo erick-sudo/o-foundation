@@ -4,15 +4,16 @@ import { images } from "../assets/images/images";
 import { ContentOnImage } from "./ContentOnImage";
 import { NavBar } from "./NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { VscQuote } from "react-icons/vsc";
 import {
   faArrowRight,
   faBook,
   faFistRaised,
   faGroupArrowsRotate,
-  faPenNib,
   faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import { Glass } from "./Glass";
+import { useNavigate } from "react-router-dom";
 
 // Home component
 export const Home = () => {
@@ -21,6 +22,26 @@ export const Home = () => {
     { icon: faBook, title: "Academic Support" },
     { icon: faGroupArrowsRotate, title: "Community Outreach Activities" },
   ];
+
+  const testimonials = [
+    {
+      name: "Sarah Thompson",
+      testimony:
+        "Joining the Youth Sports Leagues has been an incredible experience for my kids. The emphasis on teamwork, fair play, and skill development is truly commendable. It's more than just sports; it's about building character and fostering a love for a healthy and active lifestyle. Kudos to the dedicated team behind this fantastic initiative!",
+    },
+    {
+      name: "Jason Rodriguez",
+      testimony:
+        "I can't say enough about the impact of the Fitness and Wellness Programs. The variety of activities, from yoga to general fitness classes, has significantly improved my overall well-being. The educational sessions on healthy living have been eye-opening. It's not just a workout; it's a holistic approach to a healthier life. I highly recommend getting involved!",
+    },
+    {
+      name: "Amanda Carter",
+      testimony:
+        "The Mentorship Programs provided by this organization have been a game-changer for me. Having an experienced athlete as my mentor has guided me in setting personal goals, developing crucial life skills, and even considering a career in sports. The supportive network created through these programs is invaluable. It's more than mentorship; it's a pathway to personal and professional growth.",
+    },
+  ];
+
+  const navigate = useNavigate();
 
   const services = [
     "Youth Sports Leagues",
@@ -58,7 +79,10 @@ export const Home = () => {
             </p>
           </Glass>
 
-          <Glass className="w-max m-6" glassClassName="rounded-md bg-white/75">
+          <Glass
+            className="w-max m-6"
+            glassClassName="rounded-md peer-hover:bg-green-800/75 peer-hover:ring-1 peer-hover:ring-white bg-white/75 duration-300"
+          >
             <button className="text- px-6 py-4 text-2xl text-white duration-300">
               Explore Now
             </button>
@@ -70,7 +94,7 @@ export const Home = () => {
         <h2 className="font-bold text-3xl">Emphasis on:</h2>
         <div className="grid gap-8 md:gap-2 md:flex my-4 font-bold">
           {emphasis.map((e, idx) => (
-            <div className="md:w-1/3 flex items-center gap-2">
+            <div key={idx} className="md:w-1/3 flex items-center gap-2">
               <div className="text-4xl">
                 <FontAwesomeIcon icon={e.icon} />
               </div>
@@ -131,7 +155,10 @@ export const Home = () => {
             communities, breaking barriers and creating a ripple effect of
             empowerment across the globe.
           </div>
-          <button className="self-start mx-4 hover:bg-green-900 px-6 py-4 text-2xl hover:text-white text-green-900 ring-green-900 ring-1 duration-200">
+          <button
+            onClick={() => navigate("/services")}
+            className="self-start mx-4 hover:bg-green-900 px-6 py-4 text-2xl hover:text-white text-green-900 ring-green-900 ring-1 duration-200"
+          >
             All Services
           </button>
         </div>
@@ -153,10 +180,7 @@ export const Home = () => {
       </div>
 
       <div className="relative container mx-auto grid lg:grid-cols-2 py-24">
-        <ContentOnImage
-          image="https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_640.jpg"
-          className="min-h-96"
-        >
+        <ContentOnImage image={images.iraq} className="min-h-96">
           <div className="absolute inset-0 bg-green-900/50"></div>
         </ContentOnImage>
         <div className="grid py-8 px-4">
@@ -172,10 +196,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <ContentOnImage
-        image="https://cdn.pixabay.com/photo/2015/08/05/13/54/happy-children-876541_1280.jpg"
-        className="bg-green-950/75"
-      >
+      <ContentOnImage image={images.students} className="bg-green-950/75">
         <div className="container mx-auto py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-4 flex flex-col items-center text-white">
@@ -189,7 +210,10 @@ export const Home = () => {
                 children to envision a future filled with achievement and
                 success.
               </div>
-              <button className="hover:bg-white px-6 py-4 text-2xl hover:text-green-800 ring-1 ring-white duration-200">
+              <button
+                onClick={() => navigate("/services")}
+                className="hover:bg-white px-6 py-4 text-2xl hover:text-green-800 ring-1 ring-white duration-200"
+              >
                 Explore Now
               </button>
             </div>
@@ -238,7 +262,7 @@ export const Home = () => {
         <div className="bg-green-950 text-white max-w-xl">
           <ContentOnImage
             imageContainerClassName="z-10"
-            image={images.children2}
+            image={images.guitar}
             className="min-h-[60vh]"
           >
             <div className="absolute inset-0 bg-green-900/50 z-20"></div>
@@ -257,6 +281,25 @@ export const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="pt-12 pb-24 bg-green-200">
+        <h2 className="text-center text-4xl font-extrabold text-green-950 px-6 py-2 border-b-4 border-green-700 w-max mx-auto">
+          OUR TESTIMONIALS
+        </h2>
+
+        <div className="text-green-900 grid lg:grid-cols-3 gap-8 p-4 container mx-auto">
+          {testimonials.map((t, idx) => (
+            <div className="bg-white p-6 grid" key={idx}>
+              <div className="p-4 text-4xl"><VscQuote /></div>
+              <div className="pb-4">{t.testimony}</div>
+              <div className="flex items-center gap-2">
+                <span className="border-2 w-12 border-green-700"></span>
+                <span>{t.name.toUpperCase()}</span>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>
