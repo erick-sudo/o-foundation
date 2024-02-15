@@ -17,7 +17,7 @@ export function NavBar() {
   return (
     <div className="flex flex-col md:flex-row md:items-center border-b border-green-700 pt-4">
       <h2 className="flex-grow text-4xl lg:text-5xl p-2 text-white font-extrabold">
-        OA-Foundation
+      Omollo Auko - Foundation
       </h2>
       <div className="flex flex-wrap py-4 px-12 gap-4 text-green-800 text-xs">
         {navItems.map((item, idx) => (
