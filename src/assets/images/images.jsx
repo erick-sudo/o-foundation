@@ -13,12 +13,13 @@ import image4 from "./image4.jpg";
 import image5 from "./image5.jpg";
 import image6 from "./image6.jpg";
 
-import YouthSportsLeagues from "./YouthSportsLeagues.png";
-import SportsCamps from "./SportsCamps.jpg";
-import FitnessAndWellnessPrograms from "./FitnessAndWellnessPrograms.jpg";
-import LeadershipDevelopment from "./LeadershipDevelopment.webp";
-import AcademicSupportAndTutoring from "./AcademicSupportAndTutoring.webp";
-import CommunityOutreachEvents from "./CommunityOutreachEvents.jpg";
+// import YouthSportsLeagues from "./YouthSportsLeagues.png";
+// import SportsCamps from "./SportsCamps.jpg";
+// import FitnessAndWellnessPrograms from "./FitnessAndWellnessPrograms.jpg";
+// import LeadershipDevelopment from "./LeadershipDevelopment.webp";
+// import AcademicSupportAndTutoring from "./AcademicSupportAndTutoring.webp";
+// import CommunityOutreachEvents from "./CommunityOutreachEvents.jpg";
+
 import MentorshipPrograms from "./MentorshipPrograms.jpg";
 import SpecializedSportsClinics from "./SpecializedSportsClinics.jpg";
 import AdaptiveAndInclusiveSports from "./AdaptiveAndInclusiveSports.jpg";
