@@ -63,9 +63,9 @@ export const Home = () => {
   return (
     <div className="">
       <ContentOnImage
-        className="pb-16 bg-green-950/75"
+        className="pb-16 bg-green-950/50"
         imageContainerClassName="blur-s"
-        image={images.children2}
+        image={images.image1}
       >
         <div className="container mx-auto px-4">
           <NavBar />
@@ -109,7 +109,7 @@ export const Home = () => {
           <div className="md:w-1/2 min-h-96 m-6 self-stretch flex relative">
             <ContentOnImage
               imageContainerClassName="z-10"
-              image={images.children}
+              image={images.image2}
               className="flex-grow"
             >
               <div className="absolute inset-0 bg-green-900/50 z-20"></div>
@@ -163,7 +163,7 @@ export const Home = () => {
           </button>
         </div>
         <div className="lg:w-1/3 min-h-[50vh] flex">
-          <ContentOnImage className="flex-grow m-6" image={images.sisters}>
+          <ContentOnImage className="flex-grow m-6" image={images.image3}>
             <div className="absolute inset-0 bg-green-900/50"></div>
           </ContentOnImage>
         </div>
@@ -180,7 +180,7 @@ export const Home = () => {
       </div>
 
       <div className="relative container mx-auto grid lg:grid-cols-2 py-24">
-        <ContentOnImage image={images.iraq} className="min-h-96">
+        <ContentOnImage image={images.image4} className="min-h-96">
           <div className="absolute inset-0 bg-green-900/50"></div>
         </ContentOnImage>
         <div className="grid py-8 px-4">
@@ -196,7 +196,7 @@ export const Home = () => {
         </div>
       </div>
 
-      <ContentOnImage image={images.students} className="bg-green-950/75">
+      <ContentOnImage image={images.image5} className="bg-green-950/75">
         <div className="container mx-auto py-24">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-4 flex flex-col items-center text-white">
@@ -238,7 +238,7 @@ export const Home = () => {
         <div className="bg-green-950 text-white max-w-xl">
           <ContentOnImage
             imageContainerClassName="z-10"
-            image={images.children2}
+            image={images.image1}
             className="min-h-[60vh]"
           >
             <div className="absolute inset-0 bg-green-900/50 z-20"></div>
@@ -262,7 +262,7 @@ export const Home = () => {
         <div className="bg-green-950 text-white max-w-xl">
           <ContentOnImage
             imageContainerClassName="z-10"
-            image={images.guitar}
+            image={images.image4}
             className="min-h-[60vh]"
           >
             <div className="absolute inset-0 bg-green-900/50 z-20"></div>

@@ -24,7 +24,7 @@ export function Footer() {
   ];
 
   const support = [
-    { link: "", icon: faPhoneAlt, text: "+254002827387" },
+    { link: "", icon: faPhoneAlt, text: "+254727494949" },
     { link: "", icon: faEnvelope, text: "info@gmail.com" },
   ];
 

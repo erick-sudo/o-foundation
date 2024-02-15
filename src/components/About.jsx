@@ -38,7 +38,7 @@ export function About() {
       <ContentOnImage
         className="pb-16 bg-green-950/50"
         imageContainerClassName="blur-s"
-        image={images.iraq}
+        image={images.image3}
       >
         <div className="container mx-auto px-4">
           <NavBar />
@@ -55,7 +55,7 @@ export function About() {
           <div className="absolute top-8 bottom-8 left-[10%] right-[30%]">
             <img
               className="w-full h-full object-cover"
-              src="https://cdn.pixabay.com/photo/2015/08/18/20/45/kids-894787_640.jpg"
+              src={images.image4}
             />
           </div>
         </div>
@@ -90,7 +90,7 @@ export function About() {
               <FontAwesomeIcon icon={faPhone} />
               <div>
                 <h3>Free Consultation</h3>
-                <h4> CALL: +254704537283</h4>
+                <h4> CALL: +254727494949</h4>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@ export function About() {
         className=""
         imageContainerClassName=""
         image={
-          "https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_640.jpg"
+          images.image4
         }
       >
         <div className="bg-green-950/95 py-24">
@@ -161,7 +161,7 @@ export function About() {
               <FontAwesomeIcon icon={faPhone} />
               <div>
                 <h3>Free Consultation</h3>
-                <h4> CALL: +254704537283</h4>
+                <h4> CALL: +254727494949</h4>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ export function About() {
           <div className="absolute top-8 bottom-8 right-[10%] left-[30%]">
             <img
               className="w-full h-full object-cover"
-              src="https://cdn.pixabay.com/photo/2016/10/07/02/03/children-1720484_640.jpg"
+              src={images.image6}
             />
           </div>
         </div>

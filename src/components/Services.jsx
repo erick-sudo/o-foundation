@@ -39,36 +39,36 @@ export function Services() {
       "Conduct sports clinics, tournaments, or friendly matches.",
       "Promote social inclusion and community bonding.",
     ],
-    "Mentorship Programs": [
-      "Pair experienced athletes or community leaders as mentors for young participants.",
-      "Focus on personal development, goal setting, and career guidance.",
-      "Create a supportive network for youth to seek advice and encouragement.",
-    ],
-    "Specialized Sports Clinics": [
-      "Offer specialized clinics for specific sports skills.",
-      "Bring in guest coaches or athletes for expert guidance.",
-      "Cater to both beginners and those looking to enhance their skills.",
-    ],
-    "Adaptive and Inclusive Sports": [
-      "Develop programs that cater to individuals with different abilities.",
-      "Promote inclusivity by adapting sports to accommodate diverse needs.",
-      "Collaborate with organizations specializing in adaptive sports.",
-    ],
-    "Sports for Social Change": [
-      "Use sports as a tool for addressing social issues.",
-      "Organize campaigns, events, or tournaments that raise awareness.",
-      "Encourage youth to become advocates for positive change.",
-    ],
-    "Career Exploration in Sports": [
-      "Provide insights into various careers within the sports industry.",
-      "Arrange workshops, seminars, or internships with professionals.",
-      "Inspire youth to consider sports-related careers beyond playing.",
-    ],
-    "Healthy Lifestyle Challenges": [
-      "Launch challenges that promote healthy habits.",
-      "Include fitness challenges, nutrition awareness campaigns, and stress management activities.",
-      "Foster a holistic approach to well-being.",
-    ],
+    // "Mentorship Programs": [
+    //   "Pair experienced athletes or community leaders as mentors for young participants.",
+    //   "Focus on personal development, goal setting, and career guidance.",
+    //   "Create a supportive network for youth to seek advice and encouragement.",
+    // ],
+    // "Specialized Sports Clinics": [
+    //   "Offer specialized clinics for specific sports skills.",
+    //   "Bring in guest coaches or athletes for expert guidance.",
+    //   "Cater to both beginners and those looking to enhance their skills.",
+    // ],
+    // "Adaptive and Inclusive Sports": [
+    //   "Develop programs that cater to individuals with different abilities.",
+    //   "Promote inclusivity by adapting sports to accommodate diverse needs.",
+    //   "Collaborate with organizations specializing in adaptive sports.",
+    // ],
+    // "Sports for Social Change": [
+    //   "Use sports as a tool for addressing social issues.",
+    //   "Organize campaigns, events, or tournaments that raise awareness.",
+    //   "Encourage youth to become advocates for positive change.",
+    // ],
+    // "Career Exploration in Sports": [
+    //   "Provide insights into various careers within the sports industry.",
+    //   "Arrange workshops, seminars, or internships with professionals.",
+    //   "Inspire youth to consider sports-related careers beyond playing.",
+    // ],
+    // "Healthy Lifestyle Challenges": [
+    //   "Launch challenges that promote healthy habits.",
+    //   "Include fitness challenges, nutrition awareness campaigns, and stress management activities.",
+    //   "Foster a holistic approach to well-being.",
+    // ],
   };
 
   return (

@@ -16,7 +16,7 @@ export function Contact() {
     {
       icon: faPhoneAlt,
       title: "CALL US",
-      link: "+254795278145",
+      link: "+254727494949",
     },
     {
       icon: faEnvelope,
@@ -26,7 +26,7 @@ export function Contact() {
     {
       icon: faLocationPin,
       title: "OUR ADDRESS",
-      link: "+254795278145",
+      link: "+254727494949",
     },
     {
       icon: faClock,
@@ -46,7 +46,7 @@ export function Contact() {
       <ContentOnImage
         className="pb-16 bg-green-950/50"
         imageContainerClassName="blur-s"
-        image="https://cdn.pixabay.com/photo/2017/10/15/13/03/football-2853583_1280.jpg"
+        image={images.image2}
       >
         <div className="container mx-auto px-4">
           <NavBar />
