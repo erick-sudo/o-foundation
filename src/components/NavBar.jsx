@@ -19,7 +19,7 @@ export function NavBar() {
       <h2 className="flex-grow text-4xl lg:text-5xl p-2 text-white font-extrabold">
         OA-Foundation
       </h2>
-      <div className="flex py-4 px-12 gap-4 text-green-800 text-xs">
+      <div className="flex flex-wrap py-4 px-12 gap-4 text-green-800 text-xs">
         {navItems.map((item, idx) => (
           <Glass
             onClick={() => navigate(item.path)}
